@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html><head>
+<title>eric6.MicroPython.CircuitPythonFirmwareSelectionDialog</title>
+<meta charset="UTF-8">
+<style>
+body {
+    background: #EDECE6;
+    margin: 0em 1em 10em 1em;
+    color: black;
+}
+
+h1 { color: white; background: #85774A; }
+h2 { color: white; background: #85774A; }
+h3 { color: white; background: #9D936E; }
+h4 { color: white; background: #9D936E; }
+    
+a { color: #BA6D36; }
+
+</style>
+</head>
+<body>
+<a NAME="top" ID="top"></a>
+<h1>eric6.MicroPython.CircuitPythonFirmwareSelectionDialog</h1>
+
+<p>
+Module implementing a dialog to enter the firmware flashing data.
+</p>
+<h3>Global Attributes</h3>
+
+<table>
+<tr><td>None</td></tr>
+</table>
+<h3>Classes</h3>
+
+<table>
+
+<tr>
+<td><a href="#CircuitPythonFirmwareSelectionDialog">CircuitPythonFirmwareSelectionDialog</a></td>
+<td>Class implementing a dialog to enter the firmware flashing data.</td>
+</tr>
+</table>
+<h3>Functions</h3>
+
+<table>
+<tr><td>None</td></tr>
+</table>
+<hr />
+<hr />
+<a NAME="CircuitPythonFirmwareSelectionDialog" ID="CircuitPythonFirmwareSelectionDialog"></a>
+<h2>CircuitPythonFirmwareSelectionDialog</h2>
+
+<p>
+    Class implementing a dialog to enter the firmware flashing data.
+</p>
+<h3>Derived from</h3>
+QDialog, Ui_CircuitPythonFirmwareSelectionDialog
+<h3>Class Attributes</h3>
+
+<table>
+<tr><td>None</td></tr>
+</table>
+<h3>Class Methods</h3>
+
+<table>
+<tr><td>None</td></tr>
+</table>
+<h3>Methods</h3>
+
+<table>
+
+<tr>
+<td><a href="#CircuitPythonFirmwareSelectionDialog.__init__">CircuitPythonFirmwareSelectionDialog</a></td>
+<td>Constructor</td>
+</tr>
+<tr>
+<td><a href="#CircuitPythonFirmwareSelectionDialog.__updateOkButton">__updateOkButton</a></td>
+<td>Private method to update the state of the OK button and the retest button.</td>
+</tr>
+<tr>
+<td><a href="#CircuitPythonFirmwareSelectionDialog.getData">getData</a></td>
+<td>Public method to obtain the entered data.</td>
+</tr>
+<tr>
+<td><a href="#CircuitPythonFirmwareSelectionDialog.on_boardComboBox_currentIndexChanged">on_boardComboBox_currentIndexChanged</a></td>
+<td>Private slot to handle the selection of a board type.</td>
+</tr>
+<tr>
+<td><a href="#CircuitPythonFirmwareSelectionDialog.on_bootPicker_textChanged">on_bootPicker_textChanged</a></td>
+<td>Private slot handling a change of the device path.</td>
+</tr>
+<tr>
+<td><a href="#CircuitPythonFirmwareSelectionDialog.on_firmwarePicker_textChanged">on_firmwarePicker_textChanged</a></td>
+<td>Private slot handling a change of the firmware path.</td>
+</tr>
+<tr>
+<td><a href="#CircuitPythonFirmwareSelectionDialog.on_retestButton_clicked">on_retestButton_clicked</a></td>
+<td>Private slot to research for the selected volume.</td>
+</tr>
+</table>
+<h3>Static Methods</h3>
+
+<table>
+<tr><td>None</td></tr>
+</table>
+
+<a NAME="CircuitPythonFirmwareSelectionDialog.__init__" ID="CircuitPythonFirmwareSelectionDialog.__init__"></a>
+<h4>CircuitPythonFirmwareSelectionDialog (Constructor)</h4>
+<b>CircuitPythonFirmwareSelectionDialog</b>(<i>parent=None</i>)
+
+<p>
+        Constructor
+</p>
+<dl>
+
+<dt><i>parent</i> (QWidget)</dt>
+<dd>
+reference to the parent widget
+</dd>
+</dl>
+<a NAME="CircuitPythonFirmwareSelectionDialog.__updateOkButton" ID="CircuitPythonFirmwareSelectionDialog.__updateOkButton"></a>
+<h4>CircuitPythonFirmwareSelectionDialog.__updateOkButton</h4>
+<b>__updateOkButton</b>(<i></i>)
+
+<p>
+        Private method to update the state of the OK button and the retest
+        button.
+</p>
+<a NAME="CircuitPythonFirmwareSelectionDialog.getData" ID="CircuitPythonFirmwareSelectionDialog.getData"></a>
+<h4>CircuitPythonFirmwareSelectionDialog.getData</h4>
+<b>getData</b>(<i></i>)
+
+<p>
+        Public method to obtain the entered data.
+</p>
+<dl>
+<dt>Returns:</dt>
+<dd>
+tuple containing the path to the CircuitPython firmware file
+            and the path to the device
+</dd>
+</dl>
+<dl>
+<dt>Return Type:</dt>
+<dd>
+tuple of (str, str)
+</dd>
+</dl>
+<a NAME="CircuitPythonFirmwareSelectionDialog.on_boardComboBox_currentIndexChanged" ID="CircuitPythonFirmwareSelectionDialog.on_boardComboBox_currentIndexChanged"></a>
+<h4>CircuitPythonFirmwareSelectionDialog.on_boardComboBox_currentIndexChanged</h4>
+<b>on_boardComboBox_currentIndexChanged</b>(<i>index</i>)
+
+<p>
+        Private slot to handle the selection of a board type.
+</p>
+<dl>
+
+<dt><i>index</i> (int)</dt>
+<dd>
+index of the selected board type
+</dd>
+</dl>
+<a NAME="CircuitPythonFirmwareSelectionDialog.on_bootPicker_textChanged" ID="CircuitPythonFirmwareSelectionDialog.on_bootPicker_textChanged"></a>
+<h4>CircuitPythonFirmwareSelectionDialog.on_bootPicker_textChanged</h4>
+<b>on_bootPicker_textChanged</b>(<i>devicePath</i>)
+
+<p>
+        Private slot handling a change of the device path.
+</p>
+<dl>
+
+<dt><i>devicePath</i> (str)</dt>
+<dd>
+path to the device
+</dd>
+</dl>
+<a NAME="CircuitPythonFirmwareSelectionDialog.on_firmwarePicker_textChanged" ID="CircuitPythonFirmwareSelectionDialog.on_firmwarePicker_textChanged"></a>
+<h4>CircuitPythonFirmwareSelectionDialog.on_firmwarePicker_textChanged</h4>
+<b>on_firmwarePicker_textChanged</b>(<i>firmware</i>)
+
+<p>
+        Private slot handling a change of the firmware path.
+</p>
+<dl>
+
+<dt><i>firmware</i> (str)</dt>
+<dd>
+path to the firmware
+</dd>
+</dl>
+<a NAME="CircuitPythonFirmwareSelectionDialog.on_retestButton_clicked" ID="CircuitPythonFirmwareSelectionDialog.on_retestButton_clicked"></a>
+<h4>CircuitPythonFirmwareSelectionDialog.on_retestButton_clicked</h4>
+<b>on_retestButton_clicked</b>(<i></i>)
+
+<p>
+        Private slot to research for the selected volume.
+</p>
+<div align="right"><a href="#top">Up</a></div>
+<hr />
+</body></html>

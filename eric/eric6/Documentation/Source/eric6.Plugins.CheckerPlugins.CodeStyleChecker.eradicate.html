@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html><head>
+<title>eric6.Plugins.CheckerPlugins.CodeStyleChecker.eradicate</title>
+<meta charset="UTF-8">
+<style>
+body {
+    background: #EDECE6;
+    margin: 0em 1em 10em 1em;
+    color: black;
+}
+
+h1 { color: white; background: #85774A; }
+h2 { color: white; background: #85774A; }
+h3 { color: white; background: #9D936E; }
+h4 { color: white; background: #9D936E; }
+    
+a { color: #BA6D36; }
+
+</style>
+</head>
+<body>
+<a NAME="top" ID="top"></a>
+<h1>eric6.Plugins.CheckerPlugins.CodeStyleChecker.eradicate</h1>
+
+<p>
+Removes commented-out Python code.
+</p>
+<h3>Global Attributes</h3>
+
+<table>
+<tr><td>MULTILINE_ASSIGNMENT_REGEX</td></tr><tr><td>PARTIAL_DICTIONARY_REGEX</td></tr><tr><td>__version__</td></tr>
+</table>
+<h3>Classes</h3>
+
+<table>
+<tr><td>None</td></tr>
+</table>
+<h3>Functions</h3>
+
+<table>
+
+<tr>
+<td><a href="#comment_contains_code">comment_contains_code</a></td>
+<td>Return True comment contains code.</td>
+</tr>
+<tr>
+<td><a href="#commented_out_code_line_numbers">commented_out_code_line_numbers</a></td>
+<td>Yield line numbers of commented-out code.</td>
+</tr>
+<tr>
+<td><a href="#detect_encoding">detect_encoding</a></td>
+<td>Return file encoding.</td>
+</tr>
+<tr>
+<td><a href="#filter_commented_out_code">filter_commented_out_code</a></td>
+<td>Yield code with commented out code removed.</td>
+</tr>
+<tr>
+<td><a href="#fix_file">fix_file</a></td>
+<td>Run filter_commented_out_code() on file.</td>
+</tr>
+<tr>
+<td><a href="#main">main</a></td>
+<td>Main entry point.</td>
+</tr>
+<tr>
+<td><a href="#multiline_case">multiline_case</a></td>
+<td>Return True if line is probably part of some multiline code.</td>
+</tr>
+<tr>
+<td><a href="#open_with_encoding">open_with_encoding</a></td>
+<td>Return opened file with a specific encoding.</td>
+</tr>
+</table>
+<hr />
+<hr />
+<a NAME="comment_contains_code" ID="comment_contains_code"></a>
+<h2>comment_contains_code</h2>
+<b>comment_contains_code</b>(<i>line, aggressive=True</i>)
+
+<p>
+Return True comment contains code.
+</p>
+<div align="right"><a href="#top">Up</a></div>
+<hr />
+<hr />
+<a NAME="commented_out_code_line_numbers" ID="commented_out_code_line_numbers"></a>
+<h2>commented_out_code_line_numbers</h2>
+<b>commented_out_code_line_numbers</b>(<i>source, aggressive=True</i>)
+
+<p>
+Yield line numbers of commented-out code.
+</p>
+<div align="right"><a href="#top">Up</a></div>
+<hr />
+<hr />
+<a NAME="detect_encoding" ID="detect_encoding"></a>
+<h2>detect_encoding</h2>
+<b>detect_encoding</b>(<i>filename</i>)
+
+<p>
+Return file encoding.
+</p>
+<div align="right"><a href="#top">Up</a></div>
+<hr />
+<hr />
+<a NAME="filter_commented_out_code" ID="filter_commented_out_code"></a>
+<h2>filter_commented_out_code</h2>
+<b>filter_commented_out_code</b>(<i>source, aggressive=True</i>)
+
+<p>
+Yield code with commented out code removed.
+</p>
+<div align="right"><a href="#top">Up</a></div>
+<hr />
+<hr />
+<a NAME="fix_file" ID="fix_file"></a>
+<h2>fix_file</h2>
+<b>fix_file</b>(<i>filename, args, standard_out</i>)
+
+<p>
+Run filter_commented_out_code() on file.
+</p>
+<div align="right"><a href="#top">Up</a></div>
+<hr />
+<hr />
+<a NAME="main" ID="main"></a>
+<h2>main</h2>
+<b>main</b>(<i>argv, standard_out, standard_error</i>)
+
+<p>
+Main entry point.
+</p>
+<div align="right"><a href="#top">Up</a></div>
+<hr />
+<hr />
+<a NAME="multiline_case" ID="multiline_case"></a>
+<h2>multiline_case</h2>
+<b>multiline_case</b>(<i>line, aggressive=True</i>)
+
+<p>
+Return True if line is probably part of some multiline code.
+</p>
+<div align="right"><a href="#top">Up</a></div>
+<hr />
+<hr />
+<a NAME="open_with_encoding" ID="open_with_encoding"></a>
+<h2>open_with_encoding</h2>
+<b>open_with_encoding</b>(<i>filename, encoding, mode='r'</i>)
+
+<p>
+Return opened file with a specific encoding.
+</p>
+<div align="right"><a href="#top">Up</a></div>
+<hr />
+</body></html>
